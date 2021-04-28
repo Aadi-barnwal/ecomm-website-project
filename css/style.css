@@ -1,0 +1,888 @@
+@import url('https://fonts.googleapis.com/css2?family=Gorditas&family=Kelly+Slab&family=PT+Serif&display=swap');
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'PT Serif', serif;
+    background-color: white;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    width: 100%;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.09);
+    z-index: 100;
+}
+
+
+
+/* menu bar styling starts *********************/
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+}
+
+.logo img{
+    height: 75px;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu li{
+    position: relative;
+    margin: 20px;
+    display: flex;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.menu li a{
+    color: rgb(46, 35, 27);
+}
+
+.ri8menu a{
+    color: rgba(0, 0, 0, 0.6);
+    margin: 0px 10px;
+    font-size: 1.2rem;
+}
+
+/* menu + search icon menu styling starts */
+.menu a:hover, 
+.ri8menu a:hover,
+.search-cancel:hover,
+.form-cancel:hover{
+    color: sandybrown;
+    transition: all ease 0.3s;
+}
+/* menu + search icon menu styling ends */
+
+
+/* cart + user icon styling starts */
+.fa-shopping-cart{
+    position: relative;
+}
+.num-cart-product{
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 20px;
+    height: 20px;
+    font-size: 0.7rem;
+    border-radius: 50%;
+    background-color: rgb(4, 173, 195);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+}
+/* cart + user icon styling ends */
+
+/* menu bar styling ends *****************/
+
+
+/* search-bar styling starts ***********************/
+.search-bar{
+    width: 100%;
+    height: 300px;
+    background-color: #fff;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 2px -5px 25px rgba(0, 0, 0, 0.1);
+    z-index: 101;
+    animation: search 0.3s;
+}
+
+.search-input{
+    width: 90%;
+    border-bottom: 2px solid #2e2e2e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin-top: 20px;
+}
+
+.search-bar input{
+    width: 100%;
+    padding: 30px;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    margin: 20px;
+    padding: 0px 20px;
+}
+
+.search-cancel{
+    color: gray;
+    font-size: 2rem;
+    padding-right: 40px;
+}
+
+.search-bar{
+    display: none;
+}
+
+.search-bar-active{
+    display: flex;
+}
+@keyframes search{
+    0%{
+        bottom: -300px;
+    }
+    100%{
+        bottom: 0px;
+    }
+}
+
+
+/* search-bar styling ends **********************/
+
+
+/* ************ Login styling starts ***************/
+.form{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 102;
+}
+
+.login-form,
+.sign-up-form{
+    width: 420px;
+    padding: 20px 10px;
+    background-color: #fff;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    position: relative;
+}
+
+.login-form form,
+.sign-up-form form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.login-form strong,
+.sign-up-form strong{
+    color: #2e2e2e;
+    font-size: 2rem;
+    margin: 2px 7px 7px 7px;
+    letter-spacing: 0.7px;
+    font-weight: 500;
+}
+
+.login-form input,
+.sign-up-form input{
+    width: 90%;
+    height: 42px;
+    margin: 3px 0px;
+    padding: 0px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    outline: none;
+    border-radius: 9px;
+}
+
+.login-form input::placeholder,
+.sign-up-form input::placeholder{
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.login-form input[type="submit"],
+.sign-up-form input[type="submit"]{
+    background-color: #04adc3;
+    color: white;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    margin-top: 6px;
+    border-radius: 9px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+}
+
+.form-btns{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.form-btns a{
+    color: #2e2e2e;
+    font-size: 0.8rem;
+}
+
+.sign-up-btn{
+    border-bottom: 1px solid gray;
+    line-height: 16px;
+}
+
+.form-cancel{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    color: gray;
+}
+
+.login-form,
+.sign-up-form,
+.form{
+    display: none;
+}
+
+.login-active,
+.login-active .login-form{
+    display: flex;
+    animation: fade 0.3s;
+}
+
+.sign-up-active,
+.sign-up-active .sign-up-form{
+    display: flex;
+    animation: fade 0.3s;
+}
+
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/* ************ Login styling ends ******************/
+
+/************ full-page slider styling starts **************/
+.full-slider-box,
+.banner-box{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.f-slide-1{
+    background-image: url('../images/slide1.jpg');
+}
+
+.f-slide-2{
+    background-image: url('../images/shoe.jpg');
+}
+
+.f-slide-3{
+    background-image: url('../images/slider2.jpg');
+}
+
+.slider-text-container,
+.banner-text-container{
+    width: 90%;
+    height: 90%;
+    /* margin-right: 32px; */
+    display: flex;
+    align-items: center;
+}
+
+.f-slider-text,
+.banner-text{
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+}
+
+.f-slider-text strong,
+.banner-text strong{
+    color: rgb(133, 133, 133);
+    font-size: 2.3rem;
+    line-height: 48px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+
+.f-slider-text span,
+.banner-text span{
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    color: #640000;
+    font-size: 1.1rem;
+}
+
+.f-slider-btn,
+.banner-btn{
+    width: 170px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #04adc3;
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
+
+.f-slider-text strong font,
+.banner-text strong font{
+    color: #04adc3;
+}
+
+/************ full-page slider styling ends **************/
+
+
+/************* featured category section styling starts **********/
+.feature-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-heading h2,
+.arrival-heading strong{
+    font-size: 1.5rem;
+    color: #2e2e2e;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-top: 40px;
+    padding: 7px 32px;
+    border: 1px solid blanchedalmond;
+}
+
+.feature-box{
+    width: 155px;
+    height: 155px;
+    margin: 0px 20px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.feature-box a img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.item span{
+    font-weight: 600;
+    font-size: 1rem;
+    color: #2e2e2e;
+    margin: 5px;
+}
+
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#autoWidth{
+    display: flex;
+    justify-content: center !important;
+    margin: 10px auto 40px auto;
+}
+/************* featured category section styling ends **********/
+
+
+/* --------------- new-arrival proucts styling stylings ----------------------- */
+.arrival-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.arrival-heading strong{
+    color: white;
+    background-color: #2e2e2e;
+    font-weight: 500;
+}
+
+.arrival-heading p{
+    color: darkgray;
+    margin: 10px;
+    font-size: 0.9rem;
+}
+
+.product-container{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.product-box{
+    display: flex;
+    flex-grow: 0.5;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #f7f7f7;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.product-img{
+    width: 200px;
+    height: 210px;
+    margin: 20px 20px 10px 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.product-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.product-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    border-top: 1px solid #f7f7f7;
+}
+
+.p-name{
+    color: darkgray;
+}
+
+.p-price{
+    color: #312f2f;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.product-box:hover{
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.19);
+}
+
+.add-cart{
+    position: absolute;
+    right: -24px;
+    top: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #04adc3;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+    display: none;
+    animation: fade 0.3s;
+}
+
+.add-cart:hover{
+    background-color: sandybrown;
+    transition: all ease  0.2s;
+}
+
+.product-box:hover .add-cart{
+    display: flex;
+}
+
+.new-arrival{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* --------------- new-arrival proucts styling ends ----------------------- */
+
+
+/* ------------------------- banner styling starts ----------------------------- */
+.banner-box{
+    height: 60vh;
+    margin: 20px 0px;
+}
+/* ------------------------- banner styling ends ----------------------------- */
+
+
+/* ------------------------- services styling starts ----------------------------- */
+.services{
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.services-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    min-width: 250px;
+    padding: 20px;
+    margin: 15px;
+    flex-grow: 0.7;
+}
+
+.services-box i{
+    color: #04adc3;
+    font-size: 2rem;
+    margin: 15px;
+}
+
+.services-box span{
+    color: #312f2f;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    font-size: 1.05rem;
+}
+
+.services-box p{
+    color: #2e2e2e;
+    margin: 0;
+    font-size: 0.9rem;
+    text-align: center;
+}
+/* ------------------------- services styling ends ----------------------------- */
+
+
+/*  **************** newsletter css starts ****************  */
+.root-news{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    background-color: #13a7e2;
+    width: 100%;
+}
+
+.wrapper{
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.5px;
+}
+
+.wrapper h2{
+    margin-bottom: 18px;
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+.wrapper p{
+    margin-bottom: 20px;
+    margin-top: auto;
+    color: #d4d3d3;
+    font-size: 1rem;
+}
+
+.newsletter{
+    max-width: 550px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.newsletter .inp{
+    width: 100%;
+    padding: 30px 60px;
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+}
+
+.newsletter .fa{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 21px;
+    font-size: 18px;
+}
+
+.newsletter .buttom{
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    background: #13a7e2;
+    padding: 15px 20px;
+    border-radius: 25px;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    color: #fff;
+    cursor: pointer;
+}
+/*  **************** newsletter css ends ****************  */
+
+
+/*  **************** footer css starts *******************************  */
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px dashed rgba(0, 0, 0, 0.14);;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.copyright{
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+/* social links and customer care number styling starts */
+.social-call{
+    height: 40px;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social a{
+    margin: 0px 5px;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 1.09rem;
+}
+
+.phone{
+    color: rgba(0, 0, 0, 0.8);
+    margin-left: 30px;
+    font-size: 0.9rem;
+}
+
+.social a:hover{
+    color: sandybrown;
+    transition: all ease 0.3s;
+}
+/* social links and customer care number styling ends */
+
+/*  **************** footer css ends *******************************  */
+
+.fix-nav{
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: #fff;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.05);
+    z-index: 102;
+}
+
+
+.toggle{
+    display: none;
+}
+
+/*********************** Making website responsive starts ***********************/
+
+@media(max-width:1010px){
+    nav{
+        position: relative;
+    }
+    .navigation{
+        height: 80px;
+    }
+    .fix-nav{
+        height: 80px;
+    }
+    .menu{
+        position: absolute;
+        top: 110px;
+        left: 0px;
+        background-color: #fff;
+        border-bottom: 4px solid #f4a460;
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        z-index: 102;
+        flex-direction: column;
+        display: none;
+    }
+    .fix-nav .menu{
+        top: 80px;
+    }
+    .menu li{
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+    .navigation .menu li a{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        margin: 0px;
+        padding: 25px;
+        border: 1px solid rgba(0, 0, 0, 0.03);
+    }
+    .toggle{
+        display: block;
+    }
+    .toggle::before{
+        content: '\f0c9';
+        font-family: fontAwesome;
+        line-height: 30px;
+        z-index: 1;
+        cursor: pointer;
+    }
+    .toggle.active::before{
+        content: '\f00d';
+    }
+    .navigation.active .menu{
+        display: block;
+    }
+    .full-slider-box,
+    .banner-box{
+        height: 45vh;
+    }
+    .f-slider-text span,
+    .banner-text span{
+        font-size: 0.9rem;
+    }
+    .f-slider-text strong,
+    .banner-text strong{
+        font-size: 2rem;
+        line-height: 40px;
+    }
+    .search-input{
+        height: 60px;
+    }
+    .search-input input,
+    .search-cancel{
+        font-size: 1.4rem;
+    }
+    .social-call{
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+    .root-news{
+        width: 100%;
+        display: flex;
+    }
+    .wrapper{
+        width: 100%;
+        display: flex;
+    }
+    .newsletter{
+        width: 100%;
+    }
+}
+
+
+@media(max-width:600px){
+    .navigation{
+        padding: 10px;
+    }
+    .f-slider-text strong,
+    .banner-text strong{
+        font-size: 1.2rem;
+        line-height: 25px;
+    }
+    .full-slider-box,
+    .banner-box{
+        height: 30vh;
+    }
+    .f-slider-text span,
+    .banner-text span{
+        font-size: 0.8rem;
+    }
+    .f-slider-btn,
+    .banner-btn{
+        width: 120px;
+        height: 30px;
+        font-size: 0.8rem;
+    }
+    .feature-heading h2,
+    .wrapper h2{
+        font-size: 1.2rem;
+    }
+    .feature-box{
+        width: 120px;
+        height: 120px;
+    }
+    .new-arrival strong,
+    .feature-heading strong{
+        font-size: 1.2rem;
+    }
+    .new-arrival p,
+    .feature-heading p,
+    .wrapper p{
+        font-size: 0.8rem;
+        text-align: center;
+    }
+    .services{
+        width: 100%;
+    }
+    .services-box{
+        width: 100%;
+    }
+    .copyright{
+        margin: 20px 0px;
+        text-align: center;
+    }
+    .social-call{
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+    .root-news{
+        width: 100%;
+        display: flex;
+    }
+    .wrapper{
+        width: 100%;
+        display: flex;
+    }
+    .newsletter{
+        width: 100%;
+    }
+    .login-form,
+    .sign-up-form{
+        width: 90%;
+    }
+}
+
+/*********************** Making website responsive ends ***********************/

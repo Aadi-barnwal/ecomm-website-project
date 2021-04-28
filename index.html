@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quick Shop | quickshop.com</title>
+    <!----------------- link for style sheet starts ----------------->
+    <link rel="stylesheet" href="css/style.css" />
+    <!----------------- link for style sheet ends ----------------->
+
+    <!------------ link for light-slider css starts ------------------------>
+    <link rel="stylesheet" type="text/css" href="css/lightslider.css" />
+    <!------------ link for light-slider css ends ------------------------>
+
+    <!-------------------- link for jquery-source starts ------------------->
+    <script src="./javascript/jquery.js"></script>
+    <!-------------------- link for jquery-source ends ----------------------->
+
+    <!----------------- link for lightslider-javascript ----------------->
+    <script src="javascript/lightslider.js"></script>
+    <!----------------- link for lightslider-javascript ----------------->
+
+    <!------------- icon of the website starts ------------------------>
+    <link rel="shortcut icon" href="./favicon-logo.ico" />
+    <!--------------- icon of the website ends ------------------>
+
+    <!------ link for using fontawesome for icons starts ------>
+    <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--------- using fontawesome for icons ends ----------->
+  </head>
+
+  <body>
+    <!-- navigation bar starts ------------------->
+    <nav>
+      <!----------- menu bar starts ----------------------------------------->
+      <div class="navigation">
+        <!------------------ logo starts ------------------------>
+        <a href="#" class="logo">
+          <img src="./logo.png" alt="" />
+        </a>
+        <!------------------ logo ends ------------------------------>
+
+        <!-------------- menu icon starts -------------->
+        <div class="toggle"></div>
+        <!-------------- menu icon ends ---------------->
+
+        <!------------------ menu starts --------------------------->
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">Kids</a></li>
+          <li><a href="#">Mobiles</a></li>
+          <li><a href="#">Shop Now</a></li>
+        </ul>
+        <!------------------------- menu ends -------------------->
+
+        <!------------------ right menu starts ------------------->
+        <div class="ri8menu">
+          <!-------------- search starts -------------------------->
+          <a href="javascript:void(0);" class="search">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </a>
+          <!---------------- search ends ---------------------------->
+
+          <!---------------- user-icon starts ---------------------------->
+          <a href="javascript:void(0);" class="user">
+            <i class="fa fa-user" aria-hidden="true"></i>
+          </a>
+          <!---------------- user-icon ends ---------------------------->
+
+          <!---------------- shopping-cart-icon starts ---------------------------->
+          <a href="#">
+            <i class="fa fa-shopping-cart" aria-hidden="true">
+              <!-------------------- number-of-product-in-cart starts --------------->
+              <span class="num-cart-product">0</span>
+            </i>
+            <!-------------------- number-of-product-in-cart ends --------------->
+          </a>
+          <!---------------- shopping-cart ends ---------------------->
+        </div>
+        <!--------------- right menu ends -------------->
+      </div>
+      <!---------- menu bar ends ----------------------->
+    </nav>
+    <!------------ navigation bar ends -------------------------->
+
+    
+    <!------------- search-bar starts ------------------------->
+    <div class="search-bar">
+      <!------------------ search-input-starts ----------->
+      <div class="search-input">
+        <!----------------- inputs-starts ------------------->
+        <input type="text" placeholder="Search Here" />
+        <!------------------ inputs-ends -------------------->
+        <!---------------- cancel-btn-starts ----------->
+        <a href="javascript:void(0);" class="search-cancel">
+          <i class="fa fa-times"></i>
+        </a>
+        <!----------- cancel-btn-ends -------------->
+      </div>
+      <!-------------- search-input-ends ----------->
+    </div>
+    <!------------ search-bar ends ------------------------->
+
+    <!----------- login-and-sign-up form starts ----------------------->
+    <div class="form">
+      <!---------------- login form starts ----------------------->
+      <div class="login-form">
+        <!-- cancel btn starts ------------->
+        <a href="javascript:void(0);" class="form-cancel">
+          <i class="fa fa-times"></i>
+        </a>
+        <!-- cancel btn ends ------------->
+
+        <!-- heading starts ---------->
+        <strong>Log In</strong>
+        <!-- heading ends ---------->
+
+        <!-- input starts --------->
+        <form>
+          <input type="email" placeholder="someone@gmail.com" name="email" required/>
+          <input type="password" placeholder="Password" name="password" required/>
+          <!-- submit-btn start ----->
+          <input type="submit" value="Log in" />
+          <!-- submit-btn ends ----->
+        </form>
+        <!-- input ends --------->
+
+        <!-- forget-and-sign-up starts -------------->
+        <div class="form-btns">
+          <a href="#" class="forget">forgot your password?</a>
+          <a href="javascript:void(0);" class="sign-up-btn">Create Account</a>
+        </div>
+        <!-- forget-and-sign-up ends -------------->
+      </div>
+      <!--------------- login form ends ----------------------->
+
+      <!--------------- sign-up form starts ----------------------->
+      <div class="sign-up-form">
+        <!-- cancel btn starts ------------->
+        <a href="javascript:void(0);" class="form-cancel">
+          <i class="fa fa-times"></i>
+        </a>
+        <!-- cancel btn ends ------------->
+
+        <!-- heading starts ---------->
+        <strong>Sign Up</strong>
+        <!-- heading ends ---------->
+
+        <!-- input starts --------->
+        <form>
+          <input type="text" placeholder="Your Name" name="yourname" required />
+          <input type="email" placeholder="someone@gmail.com" name="email" required/>
+          <input type="password" placeholder="Password" name="password" required/>
+          <!-- submit-btn start ----->
+          <input type="submit" value="Sign Up" />
+          <!-- submit-btn ends ----->
+        </form>
+        <!-- input ends --------->
+
+        <!-- forget-and-sign-up starts -------------->
+        <div class="form-btns">
+          <a href="javascript:void(0);" class="already">Already Exist?</a>
+        </div>
+        <!-- forget-and-sign-up ends -------------->
+      </div>
+      <!---------------- sign-up form ends ----------------------->
+    </div>
+    <!---------------------- login-and-sign-up form ends ----------------------->
+
+    <!----------------- full-page slider starts ------------------------->
+    <ul id="adaptive" class="cs-hidden">
+      <!------------- box-1 starts ------------------>
+      <li class="item-a">
+        <!---------- box starts ------------>
+        <div class="full-slider-box f-slide-1">
+          <!------ slider text container starts -------->
+          <div class="slider-text-container">
+            <div class="f-slider-text">
+              <span>Hurry Now!!!</span>
+              <strong
+                >40% off <br />
+                on <font>selected items*</font></strong
+              >
+              <a href="#" class="f-slider-btn">Shop Now</a>
+            </div>
+          </div>
+          <!------ slider text container ends -------->
+        </div>
+        <!---------- box ends -------------->
+      </li>
+      <!-------------- box-1 ends -------------------->
+
+      <!------------- box-2 starts ------------------>
+      <li class="item-a">
+        <!---------- box starts ------------>
+        <div class="full-slider-box f-slide-2">
+          <!------ slider text container starts -------->
+          <div class="slider-text-container">
+            <div class="f-slider-text">
+              <span>Hurry Now!!!</span>
+              <strong
+                >40% off <br />
+                on <font>selected items*</font></strong
+              >
+              <a href="#" class="f-slider-btn">Shop Now</a>
+            </div>
+          </div>
+          <!------ slider text container ends -------->
+        </div>
+        <!---------- box ends -------------->
+      </li>
+      <!-------------- box-2 ends -------------------->
+
+      <!------------- box-3 starts ------------------>
+      <li class="item-a">
+        <!---------- box starts ------------>
+        <div class="full-slider-box f-slide-3">
+          <!------ slider text container starts -------->
+          <div class="slider-text-container">
+            <div class="f-slider-text">
+              <span>Hurry Now!!!</span>
+              <strong
+                >40% off <br />
+                on <font>selected items*</font></strong
+              >
+              <a href="#" class="f-slider-btn">Shop Now</a>
+            </div>
+          </div>
+          <!------ slider text container ends -------->
+        </div>
+        <!---------- box ends -------------->
+      </li>
+      <!-------------- box-3 ends -------------------->
+    </ul>
+
+    <!----------------- full-page slider ends -------------------------->
+
+    <!------------------------ featured category section starts ------------------------>
+    <div class="feature-heading">
+      <h2>Featured Categories</h2>
+    </div>
+
+    <ul id="autoWidth" class="cs-hidden">
+      <!---------- 1st item starts ---------------------->
+      <li class="item">
+        <!------- feature-box starts ---------------------->
+        <div class="feature-box">
+          <a href="#">
+            <img src="./images/feature5.jpg" alt="T-shirt" />
+          </a>
+        </div>
+        <!------ text for image starts ---------->
+        <span>T-shirt</span>
+        <!------ text for image ends ---------->
+        <!------- feature-box ends ---------------------->
+      </li>
+      <!---------- 1st item ends ---------------------->
+
+      <!---------- 2nd item starts ---------------------->
+      <li class="item">
+        <!------- feature-box starts ---------------------->
+        <div class="feature-box">
+          <a href="#">
+            <img src="./images/product-11.jpg" alt="shoes" />
+          </a>
+        </div>
+        <!------ text for image starts ---------->
+        <span>Shoes</span>
+        <!------ text for image ends ---------->
+        <!------- feature-box ends ---------------------->
+      </li>
+      <!---------- 2nd item ends ---------------------->
+
+      <!---------- 3rd item starts ---------------------->
+      <li class="item">
+        <!------- feature-box starts ---------------------->
+        <div class="feature-box">
+          <a href="#">
+            <img src="./images/feature3.jpg" alt="dress" />
+          </a>
+        </div>
+        <!------ text for image starts ---------->
+        <span>Floral Dress</span>
+        <!------ text for image ends ---------->
+        <!------- feature-box ends ---------------------->
+      </li>
+      <!---------- 3rd item ends ---------------------->
+
+      <!---------- 4th item starts ---------------------->
+      <li class="item">
+        <!------- feature-box starts ---------------------->
+        <div class="feature-box">
+          <a href="#">
+            <img src="./images/feature6.jpg" alt="kidswear" />
+          </a>
+        </div>
+        <!------ text for image starts ---------->
+        <span>Kidswear</span>
+        <!------ text for image ends ---------->
+        <!------- feature-box ends ---------------------->
+      </li>
+      <!---------- 4th item ends ---------------------->
+
+      <!---------- 5th item starts ---------------------->
+      <li class="item">
+        <!------- feature-box starts ---------------------->
+        <div class="feature-box">
+          <a href="#">
+            <img src="./images/featur-tshirt.jpg" alt="t-shirt" />
+          </a>
+        </div>
+        <!------ text for image starts ---------->
+        <span>T-shirt</span>
+        <!------ text for image ends ---------->
+        <!------- feature-box ends ---------------------->
+      </li>
+      <!---------- 5th item ends ---------------------->
+
+      <!---------- 6th item starts ---------------------->
+      <li class="item">
+        <!------- feature-box starts ---------------------->
+        <div class="feature-box">
+          <a href="#">
+            <img src="./images/feature4.jpg" alt="jacket" />
+          </a>
+        </div>
+        <!------ text for image starts ---------->
+        <span>Over Coat</span>
+        <!------ text for image ends ---------->
+        <!------- feature-box ends ---------------------->
+      </li>
+      <!---------- 6th item ends ---------------------->
+
+      <!---------- 7th item starts ---------------------->
+      <li class="item">
+        <!------- feature-box starts ---------------------->
+        <div class="feature-box">
+          <a href="#">
+            <img src="./images/sliding.jpg" alt="shirt" />
+          </a>
+        </div>
+        <!------ text for image starts ---------->
+        <span>Shirt</span>
+        <!------ text for image ends ---------->
+        <!------- feature-box ends ---------------------->
+      </li>
+      <!---------- 7th item ends ---------------------->
+
+      <!---------- 8th item starts ---------------------->
+      <li class="item">
+        <!------- feature-box starts ---------------------->
+        <div class="feature-box">
+          <a href="#">
+            <img src="./images/feature7.jpg" alt="jeans" />
+          </a>
+        </div>
+        <!------ text for image starts ---------->
+        <span>Jeans</span>
+        <!------ text for image ends ---------->
+        <!------- feature-box ends ---------------------->
+      </li>
+      <!---------- 8th item ends ---------------------->
+    </ul>
+
+    <!------------------------ featured category section ends ------------------------>
+
+    <!---------------------------- new-arrival proucts starts ----------------------------->
+    <section class="new-arrival">
+      <!----------- heading starts ------------>
+      <div class="arrival-heading">
+        <strong>New Arrival</strong>
+        <p>Get a new wide range of clothing</p>
+      </div>
+      <!----------- heading ends ------------>
+
+      <!------------------- product container starts ---------------------->
+      <div class="product-container">
+        <!--------------- product box-1 starts --------------->
+        <div class="product-box">
+          <!------------------- img starts --------------->
+
+          <div class="product-img">
+            <!----------- add to cart starts -------->
+            <a href="#" class="add-cart">
+              <i class="fa fa-shopping-cart"></i>
+            </a>
+            <!----------- add to cart ends --------->
+            <img src="./images/shoe3.jpg" alt="shoes" />
+          </div>
+          <!------------------ img ends ----------------->
+
+          <!------------------- details starts ------------->
+          <div class="product-details">
+            <a href="#" class="p-name">Adidas Shoes</a>
+            <span class="p-price">Rs.3999</span>
+          </div>
+          <!------------------- details ends ------------------>
+        </div>
+        <!------------------ product box-1 ends ------------------------->
+
+        <!------------------ product box-2 starts ----------------------->
+        <div class="product-box">
+          <!------------------- img starts ------------------->
+
+          <div class="product-img">
+            <!----------- add to cart starts ---------->
+            <a href="#" class="add-cart">
+              <i class="fa fa-shopping-cart"></i>
+            </a>
+            <!----------- add to cart ends ---------->
+            <img src="./images/gcloth2.jpg" alt="beachdress" />
+          </div>
+          <!------------------- img ends --------------------->
+
+          <!------------------- details starts ------------>
+          <div class="product-details">
+            <a href="#" class="p-name">Beach Dress</a>
+            <span class="p-price">Rs.2999</span>
+          </div>
+          <!----------------- details ends ---------------->
+        </div>
+        <!-------------------- product box-2 ends ---------------------->
+
+        <!------------------- product box-3 starts --------------------->
+        <div class="product-box">
+          <!------------------- img starts ------------------->
+
+          <div class="product-img">
+            <!----------- add to cart starts ----------->
+            <a href="#" class="add-cart">
+              <i class="fa fa-shopping-cart"></i>
+            </a>
+            <!----------- add to cart ends ----------->
+            <img src="./images/jeans.jpg" alt="jeans" />
+          </div>
+          <!------------------- img ends ------------------->
+
+          <!------------------- details starts ------------------->
+          <div class="product-details">
+            <a href="#" class="p-name">Jeans</a>
+            <span class="p-price">Rs.2499</span>
+          </div>
+          <!------------------- details ends ------------------->
+        </div>
+        <!--------------------------- product box-3 ends ------------------->
+
+        <!-------------------------- product box-4 starts ------------------->
+        <div class="product-box">
+          <!------------------- img starts ------------------->
+
+          <div class="product-img">
+            <!----------- add to cart starts ----------->
+            <a href="#" class="add-cart">
+              <i class="fa fa-shopping-cart"></i>
+            </a>
+            <!----------- add to cart ends ----------->
+            <img src="./images/shirt1.jpg" alt="denim shirt" />
+          </div>
+          <!------------------- img ends ------------------->
+
+          <!------------------- details starts ------------->
+          <div class="product-details">
+            <a href="#" class="p-name">Denim Shirt</a>
+            <span class="p-price">Rs.1899</span>
+          </div>
+          <!------------------- details ends ------------------->
+        </div>
+        <!---------------------- product box-4 ends ----------------------------->
+
+        <!---------------------- product box-5 starts ----------------------------->
+        <div class="product-box">
+          <!------------------- img starts ------------------->
+
+          <div class="product-img">
+            <!----------- add to cart starts ----------->
+            <a href="#" class="add-cart">
+              <i class="fa fa-shopping-cart"></i>
+            </a>
+            <!----------- add to cart ends ----------->
+            <img src="./images/feature5.jpg" alt="t-shirt" />
+          </div>
+          <!------------------- img ends ------------------->
+
+          <!----------------- details starts --------------->
+          <div class="product-details">
+            <a href="#" class="p-name">A|X T-Shirt</a>
+            <span class="p-price">Rs.3299</span>
+          </div>
+          <!------------------- details ends --------------->
+        </div>
+        <!----------------------------- product box-5 ends --------------------->
+
+        <!--------------- product box-6 starts --------------->
+        <div class="product-box">
+          <!------------------- img starts ------------------->
+
+          <div class="product-img">
+            <!----------- add to cart starts ----------->
+            <a href="#" class="add-cart">
+              <i class="fa fa-shopping-cart"></i>
+            </a>
+            <!----------- add to cart ends ----------->
+            <img src="./images/sliding.jpg" alt="shirts" />
+          </div>
+          <!------------------- img ends ------------------->
+
+          <!------------------- details starts ------------------->
+          <div class="product-details">
+            <a href="#" class="p-name">Gas Shirt</a>
+            <span class="p-price">Rs.4999</span>
+          </div>
+          <!------------------- details ends ------------------->
+        </div>
+        <!--------------- product box-6 ends --------------->
+
+        <!--------------- product box-7 starts --------------->
+        <div class="product-box">
+          <!------------------- img starts ------------------->
+
+          <div class="product-img">
+            <!----------- add to cart starts ----------->
+            <a href="#" class="add-cart">
+              <i class="fa fa-shopping-cart"></i>
+            </a>
+            <!----------- add to cart ends ----------->
+            <img src="./images/iphone6.jpeg" alt="iphone" />
+          </div>
+          <!------------------- img ends ------------------->
+
+          <!------------------- details starts ------------------->
+          <div class="product-details">
+            <a href="#" class="p-name">Iphone 12 Pro Max</a>
+            <span class="p-price">Rs.149999</span>
+          </div>
+          <!------------------- details ends ------------------->
+        </div>
+        <!--------------- product box-7 ends --------------->
+
+        <!--------------- product box-8 starts --------------->
+        <div class="product-box">
+          <!------------------- img starts ------------------->
+
+          <div class="product-img">
+            <!----------- add to cart starts ----------->
+            <a href="#" class="add-cart">
+              <i class="fa fa-shopping-cart"></i>
+            </a>
+            <!----------- add to cart ends ----------->
+            <img src="./images/kid2.jpg" alt="kidwear" />
+          </div>
+          <!------------------- img ends ------------------->
+
+          <!------------------- details starts ------------------->
+          <div class="product-details">
+            <a href="#" class="p-name">Babysuit</a>
+            <span class="p-price">Rs.2999</span>
+          </div>
+          <!------------------- details ends ------------------->
+        </div>
+        <!--------------- product box-8 ends --------------->
+      </div>
+      <!---------------------- product container ends ----------------------->
+    </section>
+
+    <!---------------------- new-arrival proucts ends ----------------------------->
+
+
+    <!---------------------------- Featured-item starts ---------------------------->
+    <section class="new-arrival">
+      <!----------- heading starts ------------>
+      <div class="arrival-heading">
+        <strong>Featured Items</strong>
+        <p>Get yourself dressed as you never before</p>
+      </div>
+      <!----------- heading ends ------------>
+
+      <!------------------- product container starts ---------------------->
+      <div class="product-container">
+        <!--------------- product box-1 starts --------------->
+        <div class="product-box">
+          <!------------------- img starts --------------->
+
+          <div class="product-img">
+            <!----------- add to cart starts -------->
+            <a href="#" class="add-cart">
+              <i class="fa fa-shopping-cart"></i>
+            </a>
+            <!----------- add to cart ends --------->
+            <img src="./images/shoe3.jpg" alt="shoes" />
+          </div>
+          <!------------------ img ends ----------------->
+
+          <!------------------- details starts ------------->
+          <div class="product-details">
+            <a href="#" class="p-name">Adidas Shoes</a>
+            <span class="p-price">Rs.3999</span>
+          </div>
+          <!------------------- details ends ------------------>
+        </div>
+        <!------------------ product box-1 ends ------------------------->
+
+        <!------------------ product box-2 starts ----------------------->
+        <div class="product-box">
+          <!------------------- img starts ------------------->
+
+          <div class="product-img">
+            <!----------- add to cart starts ---------->
+            <a href="#" class="add-cart">
+              <i class="fa fa-shopping-cart"></i>
+            </a>
+            <!----------- add to cart ends ---------->
+            <img src="./images/gcloth2.jpg" alt="beachdress" />
+          </div>
+          <!------------------- img ends --------------------->
+
+          <!------------------- details starts ------------>
+          <div class="product-details">
+            <a href="#" class="p-name">Beach Dress</a>
+            <span class="p-price">Rs.2999</span>
+          </div>
+          <!----------------- details ends ---------------->
+        </div>
+        <!-------------------- product box-2 ends ---------------------->
+
+        <!------------------- product box-3 starts --------------------->
+        <div class="product-box">
+          <!------------------- img starts ------------------->
+
+          <div class="product-img">
+            <!----------- add to cart starts ----------->
+            <a href="#" class="add-cart">
+              <i class="fa fa-shopping-cart"></i>
+            </a>
+            <!----------- add to cart ends ----------->
+            <img src="./images/jeans.jpg" alt="jeans" />
+          </div>
+          <!------------------- img ends ------------------->
+
+          <!------------------- details starts ------------------->
+          <div class="product-details">
+            <a href="#" class="p-name">Jeans</a>
+            <span class="p-price">Rs.2499</span>
+          </div>
+          <!------------------- details ends ------------------->
+        </div>
+        <!------------------------ product box-3 ends ------------------->
+
+        <!------------------------ product box-4 starts ------------------->
+        <div class="product-box">
+          <!------------------- img starts ------------------->
+
+          <div class="product-img">
+            <!----------- add to cart starts ----------->
+            <a href="#" class="add-cart">
+              <i class="fa fa-shopping-cart"></i>
+            </a>
+            <!----------- add to cart ends ----------->
+            <img src="./images/shirt1.jpg" alt="denim shirt" />
+          </div>
+          <!------------------- img ends ------------------->
+
+          <!------------------- details starts ------------->
+          <div class="product-details">
+            <a href="#" class="p-name">Denim Shirt</a>
+            <span class="p-price">Rs.1899</span>
+          </div>
+          <!------------------- details ends ------------------->
+        </div>
+        <!---------------------- product box-4 ends --------------------------->
+      </div>
+    </section>
+    <!--------------------------------- Featured-item ends ------------------------------->
+
+
+    <!------------------------------ Sale-banner starts --------------------------------->
+    <!---------- box starts ------------>
+    <div class="banner-box f-slide-3">
+      <!------ slider text container starts -------->
+      <div class="banner-text-container">
+        <div class="banner-text">
+          <span>Hurry Now!!!</span>
+          <strong
+            >40% off <br />
+            on <font>selected items*</font></strong
+          >
+          <a href="#" class="banner-btn">Shop Now</a>
+        </div>
+      </div>
+      <!------ slider text container ends -------->
+    </div>
+    <!---------- box ends -------------->
+    <!------------------------------ Sale-banner ends --------------------------------->
+
+
+    <!------------------------------ services starts --------------------------------->
+    <section class="services">
+      <!-------- services-box-1 starts ------------>
+      <div class="services-box">
+        <i class="fa fa-shipping-fast"></i>
+        <span>Free Delivery</span>
+        <p>Free delivery on orders above 499*</p>
+      </div>
+      <!-------- services-box-1 ends -------------->
+
+      <!-------- services-box-2 starts ------------>
+      <div class="services-box">
+        <i class="fa fa-mobile" aria-hidden="true"></i>
+        <span>Customer Support</span>
+        <p>We provide support for all your queries</p>
+      </div>
+      <!-------- services-box-2 ends -------------->
+
+      <!-------- services-box-3 starts ------------>
+      <div class="services-box">
+        <i class="fa fa-refresh" aria-hidden="true"></i>
+        <span>Easy Exchange</span>
+        <p>No worries we provide easy exchange facility!!</p>
+      </div>
+      <!-------- services-box-3 ends -------------->
+    </section>
+    <!------------------------------ services ends ------------------------------------>
+
+
+    <!-- ***************************** newsletter starts ***************************** -->
+    <section class="root-news">
+        <div class="wrapper">
+            <h2>Subscribe to our Newsletter</h2>
+            <p>Receive regular fashion updates</p>
+            <div class="newsletter">
+                <input type="text" class="inp" placeholder="someone@gmail.com">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <div class="buttom">Subscribe</div>
+            </div>
+        </div>
+    </section>
+    <!-- ******************************* newsletter ends ******************************* -->
+
+
+    <!----------------------------------------- footer starts ------------------------------->
+    <footer>
+        <div>
+          <!-- copyright starts -->
+          <span class="copyright">
+              Copyright © 2021 Quick Shop | quickshop.com | All Rights reserved.
+            </span>
+        </div>
+      <!-- copyright ends ---->
+
+        <!-- social links and customer care number starts -------------------->
+        <div class="social-call">
+            <!-------------- links of social media starts ---------------------->
+            <div class="social">
+                <a href="#">
+                  <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-youtube-square" aria-hidden="true"></i>
+                </a>
+            </div>
+            <!--------------------- links of social media ends ----------->
+    
+            <!----------- customer care number starts --------------->
+            <div class="phone">
+              <span>Call +911800750100</span>
+            </div>
+            <!----------------- customer care number ends ------------------>
+        </div>
+          <!-- social links and customer care number ends -------------->
+    </footer>
+    <!----------------------------------------- footer ends ---------------------------------->
+
+
+
+
+    <!-- script starts ------------->
+    <script type="text/javascript">
+      /* ------------ for-search-bar script -------------- */
+      $(document).on("click", ".search", function () {
+        $(".search-bar").addClass("search-bar-active");
+      });
+
+      $(document).on("click", ".search-cancel", function () {
+        $(".search-bar").removeClass("search-bar-active");
+      });
+      /* ------------ for-search-bar script -------------- */
+
+      // -------------- login and sign-up form starts -------------- //
+      $(document).on("click", ".user,.already", function () {
+        $(".form").addClass("login-active").removeClass("sign-up-active");
+      });
+
+      $(document).on("click", ".sign-up-btn", function () {
+        $(".form").addClass("sign-up-active").removeClass("login-active");
+      });
+
+      $(document).on("click", ".form-cancel", function () {
+        $(".form").removeClass("login-active").removeClass("sign-up-active");
+      });
+      // -------------- login and sign-up form ends -------------- //
+
+      // ---------------- full-slider script starts --------------- //
+      $(document).ready(function () {
+        $("#adaptive").lightSlider({
+          adaptiveHeight: true,
+          auto: true,
+          item: 1,
+          slideMargin: 0,
+          loop: true,
+        });
+      });
+      // ---------------- full-slider script ends ------------------ //
+
+      // ----------------- feature-slider script starts ------------- //
+      $(document).ready(function () {
+        $("#autoWidth").lightSlider({
+          autoWidth: true,
+          loop: true,
+          onSliderLoad: function () {
+            $("#autoWidth").removeClass("cS-hidden");
+          },
+        });
+      });
+      // ----------------- feature-slider script ends ------------- //
+
+
+      // ----------------- for-fix-menu-when-scroll script ends ------------- //
+      $(window).scroll(function(){
+          if($(document).scrollTop() > 50){
+              $('.navigation').addClass('fix-nav');
+          }
+          else{
+            $('.navigation').removeClass('fix-nav');
+          }
+      });
+      // ----------------- for-fix-menu-when-scroll script ends ------------- //
+
+      // ---------------- for responsive menu script starts -------------- //
+      $(document).ready(function(){
+        $('.toggle').click(function(){
+          $('.toggle').toggleClass('active')
+          $('.navigation').toggleClass('active')
+        })
+      })
+      // ---------------- for responsive menu script starts -------------- //
+    </script>
+    <!--------------------------- script ends --------------------------------->
+  </body>
+</html>
